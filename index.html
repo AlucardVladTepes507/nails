@@ -33,6 +33,22 @@
             <p class="text-gray-600">Elige la opción que más te convenga para reservar.</p>
         </div>
 
+        <!-- Mensajes importantes -->
+        <div class="bg-red-50 text-red-800 p-4 rounded-xl mb-6 border border-red-200">
+            <h2 class="text-lg font-semibold mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.257 3.514A7.49 7.49 0 0110 2.5a7.5 7.5 0 011.743 1.014c.188.1.353.226.49.373L13.52 6.5a1.5 1.5 0 00.957.553c.189-.007.38-.007.57-.007a1.5 1.5 0 001.077-.512L17.5 5.5a.5.5 0 011 0l-1.5 1.5a1.5 1.5 0 00-.512 1.077c-.007.19.006.38.006.57a1.5 1.5 0 00.553.957l2.613 2.613a.5.5 0 010 1l-1.5 1.5a1.5 1.5 0 00-1.077.512c-.19.007-.38.006-.57.006a1.5 1.5 0 00-.957.553l-2.613 2.613a.5.5 0 01-1 0L8.48 13.5a1.5 1.5 0 00-.957-.553c-.19.007-.38.007-.57.007a1.5 1.5 0 00-1.077.512L3.5 17.5a.5.5 0 01-1 0l1.5-1.5a1.5 1.5 0 00.512-1.077c.007-.19-.006-.38-.006-.57a1.5 1.5 0 00-.553-.957l-2.613-2.613a.5.5 0 010-1l1.5-1.5a1.5 1.5 0 001.077-.512c.007-.19-.006-.38-.006-.57a1.5 1.5 0 00-.553-.957L3.5 3.5a.5.5 0 011 0l1.5 1.5a1.5 1.5 0 001.077.512c.19.007.38.006.57.006a1.5 1.5 0 00.957-.553l2.613-2.613zM9.5 9.5a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z" clip-rule="evenodd" />
+                </svg>
+                Mensajes Importantes
+            </h2>
+            <ul class="list-disc list-inside space-y-1 text-sm">
+                <li><strong class="font-medium">Envía tu inspiración:</strong> Una vez agendes tu cita, por favor envía una foto del modelo de uñas que deseas realizar a través de WhatsApp. Esto nos ayudará a prepararnos mejor.</li>
+                <li><strong class="font-medium">Confirmación de la Manicurista:</strong> La manicurista debe confirmar la disponibilidad del horario.</li>
+                <li><strong class="font-medium">Pago de Apartado:</strong> Para asegurar tu cita, debes apartar con un depósito de <strong class="text-lg text-red-900">$5</strong>. Si no se realiza el pago, el cupo quedará disponible para otra persona.</li>
+                <li><strong class="font-medium">No traer acompañantes:</strong> Por favor, asiste sola a tu cita.</li>
+            </ul>
+        </div>
+
         <!-- Sección de Formulario de Citas -->
         <div class="bg-purple-50 p-6 rounded-xl mb-6 border border-purple-200">
             <h2 class="text-xl font-semibold text-purple-800 mb-4">Formulario de Reserva</h2>
@@ -50,18 +66,18 @@
                 <div class="mb-4">
                     <label for="time" class="block text-sm font-medium text-gray-700">Hora disponible</label>
                     <select id="time" name="time" required
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-300 p-2">
+                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-300 p-2">
                         <option value="">Selecciona una hora</option>
                         <!-- HORAS DISPONIBLES (EDITAR MANUALMENTE) -->
                         <option value="08:00 am a 10:00 am">08:00 am a 10:00 am</option>
-                        <option value="03:00 pm a 05:00 pm">03:00 am a 05:00 am</option
+                        <option value="03:00 pm a 05:00 pm">03:00 pm a 05:00 pm</option>
                         <!-- FIN DE HORAS DISPONIBLES -->
                     </select>
                 </div>
                 <div class="mb-4">
                     <label for="service" class="block text-sm font-medium text-gray-700">Servicio deseado</label>
                     <select id="service" name="service" required
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-300 p-2">
+                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-300 p-2">
                         <option value="">Selecciona un servicio</option>
                         <option value="Manicura completa">Manicura completa</option>
                         <option value="Uñas acrílicas">Uñas acrílicas</option>
@@ -76,7 +92,7 @@
                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-300 p-2">
                 </div>
                 <button type="submit"
-                        class="w-full bg-purple-600 text-white font-bold py-3 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 shadow-lg">
+                         class="w-full bg-purple-600 text-white font-bold py-3 px-4 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 shadow-lg">
                     Enviar Solicitud
                 </button>
             </form>
